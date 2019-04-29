@@ -81,29 +81,17 @@ Now, a `Validator` facade is extended by few rules:
 
 ```php
 // 1
-$validator = \Validator::make([
-        'foo' => 'qwerty'
-    ], [
-        'foo' => 'psw_letters'
-    ]);
+$validator = \Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_letters']);
 
 $validator->passes(); // return `true`
 
 // 2
-$validator = \Validator::make([
-        'bar' => 'qwerty'
-    ], [
-        'bar' => 'psw_case_diff'
-    ]);
+$validator = \Validator::make(['bar' => 'qwerty'], ['bar' => 'psw_case_diff']);
 
 $validator->passes(); // return `false`
 
 // 3
-$validator = \Validator::make([
-        'baz' => 'qweRTY123!#'
-    ], [
-        'baz' => 'psw_strong'
-    ]);
+$validator = \Validator::make(['baz' => 'qweRTY123!#'], ['baz' => 'psw_strong']);
 
 $validator->passes(); // return `true`
 ```
