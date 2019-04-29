@@ -3,7 +3,7 @@
 This package provides a validator for ensuring strong passwords in Laravel applications.
 
 <p align="center">
-    <a href="https://styleci.io/repos/183436706"><img src="https://styleci.io/repos/183436706/shield" alt="StyleCI" /></a>
+    <a href="https://styleci.io/repos/184076269"><img src="https://styleci.io/repos/184076269/shield" alt="StyleCI" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://img.shields.io/packagist/dt/andrey-helldar/strong-password.svg?style=flat-square" alt="Total Downloads" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://poser.pugx.org/andrey-helldar/strong-password/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://poser.pugx.org/andrey-helldar/strong-password/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
