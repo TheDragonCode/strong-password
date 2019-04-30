@@ -89,6 +89,25 @@ class PasswordTest extends TestCase
         $this->assertFalse($v2->fails());
     }
 
+    public function testMinLength()
+    {
+        // 1
+        $result = Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_min_length']);
+        $this->assertTrue($result->fails());
+
+        // 2
+        $result = Validator::make(['foo' => 'qwer'], ['foo' => 'psw_min_length']);
+        $this->assertTrue($result->fails());
+
+        // 3
+        $result = Validator::make(['foo' => 'qwerty123'], ['foo' => 'psw_min_length']);
+        $this->assertTrue($result->fails());
+
+        // 4
+        $result = Validator::make(['foo' => 'qwerty1234'], ['foo' => 'psw_min_length']);
+        $this->assertFalse($result->fails());
+    }
+
     public function testStrong()
     {
         // 1

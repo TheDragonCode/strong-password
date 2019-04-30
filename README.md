@@ -70,11 +70,12 @@ This command will create such `roles`, `permissions`, `user_roles` and `role_per
 
 Now, a `Validator` facade is extended by few rules:
 
- * `psw_letters` - The password must include at least one letter.
- * `psw_case_diff` - The password must include both upper and lower case letters.
- * `psw_numbers` - The password must include at least one number.
- * `psw_symbols` - The password must include at least one symbol.
- * `psw_strong` - The password must contain at least two characters in the lower and upper registers, at least one digit and a special character (include  all rules: `psw_letters`, `psw_case_diff`, `psw_numbers` and `psw_symbols`).
+ * `psw_letters` - The field must include at least one letter.
+ * `psw_case_diff` - The field must include both upper and lower case letters.
+ * `psw_numbers` - The field must include at least one number.
+ * `psw_symbols` - The field must include at least one symbol.
+ * `psw_min_length` - The field must be at least ten characters.
+ * `psw_strong` - The field must contain at least two characters in the lower and upper registers, at least one digit and a special character, and at least ten characters (include  all rules: `psw_letters`, `psw_case_diff`, `psw_numbers`, `psw_symbols` and `psw_min_length`).
 
 
 ### Example

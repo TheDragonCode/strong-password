@@ -2,6 +2,8 @@
 
 namespace Helldar\StrongPassword\Rules;
 
+use Illuminate\Support\Str;
+
 class PasswordRule
 {
     const AVAILABLE = ['letters', 'numbers', 'case_diff', 'symbols', 'strong'];
@@ -26,11 +28,17 @@ class PasswordRule
         return (bool) \preg_match('/\p{Z}|\p{S}|\p{P}/', $value);
     }
 
+    public static function minLength($value): bool
+    {
+        return Str::length((string) $value) >= 10;
+    }
+
     public static function strong($value): bool
     {
         return self::letters($value)
             && self::numbers($value)
             && self::caseDiff($value)
-            && self::symbols($value);
+            && self::symbols($value)
+            && self::minLength($value);
     }
 }
