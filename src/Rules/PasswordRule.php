@@ -6,8 +6,6 @@ use Illuminate\Support\Str;
 
 class PasswordRule
 {
-    const AVAILABLE = ['letters', 'numbers', 'case_diff', 'symbols', 'strong'];
-
     public static function letters($value): bool
     {
         return (bool) \preg_match('/\pL/', $value);

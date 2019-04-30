@@ -92,6 +92,10 @@ $validator->passes(); // return `false`
 // 3
 $validator = \Validator::make(['baz' => 'qweRTY123!#'], ['baz' => 'psw_strong']);
 $validator->passes(); // return `true`
+
+// 4
+$validator = \Validator::make(['baz' => 'qweRTY123!#'], ['baz' => 'psw_letters|psw_min_length']);
+$validator->passes(); // return `true`
 ```
 
 

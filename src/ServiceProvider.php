@@ -2,7 +2,6 @@
 
 namespace Helldar\StrongPassword;
 
-use Helldar\StrongPassword\Exceptions\RuleDoesNotExistsException;
 use Helldar\StrongPassword\Rules\PasswordRule;
 use Illuminate\Contracts\Validation\Factory;
 use Illuminate\Support\Str;
@@ -21,17 +20,21 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     private function validation(Factory $validator)
     {
         \array_map(function ($rule) use ($validator) {
-            $snake = Str::snake($rule);
             $camel = Str::camel($rule);
 
-            $validator->extend("psw_{$snake}", function ($_, $value) use ($camel) {
-                if (!\method_exists(PasswordRule::class, $camel)) {
-                    throw new RuleDoesNotExistsException($camel);
-                }
-
+            $validator->extend("psw_{$rule}", function ($_, $value) use ($camel) {
                 return \call_user_func([PasswordRule::class, $camel], $value);
-            }, $this->message($snake));
-        }, PasswordRule::AVAILABLE);
+            }, $this->message($rule));
+        }, $this->rules());
+    }
+
+    private function rules(): array
+    {
+        $methods = \get_class_methods(PasswordRule::class);
+
+        return \array_map(function ($item) {
+            return Str::snake($item);
+        }, $methods);
     }
 
     private function message($key): ?string
