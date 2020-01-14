@@ -9,7 +9,7 @@ class StrongRule implements Rule
     public static function passes($value = null): bool
     {
         /**
-         * @var \Helldar\StrongPassword\Contracts\Rule $rule
+         * @var \Helldar\StrongPassword\Contracts\Rule
          */
         foreach (static::rules() as $name => $rule) {
             if (!$rule::passes($value)) {
