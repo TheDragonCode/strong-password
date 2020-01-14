@@ -39,7 +39,6 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 }
 ```
 
-
 If you don't use auto-discovery, add the ServiceProvider to the providers array in `app/Providers/AppServiceProvider.php`:
 
 ```php
@@ -50,18 +49,6 @@ public function register()
     }
 }
 ```
-
-Copy the package config to your local config with the publish command:
-```
-php artisan vendor:publish --provider="Helldar\Roles\ServiceProvider"
-```
-
-You can create the DB tables by running the migrations:
-```
-php artisan migrate
-```
-
-This command will create such `roles`, `permissions`, `user_roles` and `role_permissions` tables.
 
 
 ## Usage
