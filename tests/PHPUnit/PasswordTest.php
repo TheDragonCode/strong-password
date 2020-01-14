@@ -24,7 +24,7 @@ class PasswordTest extends TestCase
         $result = Validator::make(['foo' => '123456'], ['foo' => 'psw_letters']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one letter.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one letter.', $result->errors()->first());
     }
 
     public function testCaseDiff()
@@ -38,13 +38,13 @@ class PasswordTest extends TestCase
         $result = Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_case_diff']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include both upper and lower case letters.", $result->errors()->first());
+        $this->assertSame('The foo must include both upper and lower case letters.', $result->errors()->first());
 
         // 3
         $result = Validator::make(['foo' => '123456'], ['foo' => 'psw_case_diff']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include both upper and lower case letters.", $result->errors()->first());
+        $this->assertSame('The foo must include both upper and lower case letters.', $result->errors()->first());
     }
 
     public function testNumbers()
@@ -53,13 +53,13 @@ class PasswordTest extends TestCase
         $result = Validator::make(['foo' => 'qweRTY'], ['foo' => 'psw_numbers']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one number.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one number.', $result->errors()->first());
 
         // 2
         $result = Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_numbers']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one number.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one number.', $result->errors()->first());
 
         // 3
         $result = Validator::make(['foo' => '123456'], ['foo' => 'psw_numbers']);
@@ -78,25 +78,25 @@ class PasswordTest extends TestCase
         $result = Validator::make(['foo' => 'qweRTY'], ['foo' => 'psw_symbols']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one symbol.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one symbol.', $result->errors()->first());
 
         // 2
         $result = Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_symbols']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one symbol.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one symbol.', $result->errors()->first());
 
         // 3
         $result = Validator::make(['foo' => '123456'], ['foo' => 'psw_symbols']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one symbol.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one symbol.', $result->errors()->first());
 
         // 4
         $result = Validator::make(['foo' => 'qwe123rty'], ['foo' => 'psw_symbols']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must include at least one symbol.", $result->errors()->first());
+        $this->assertSame('The foo must include at least one symbol.', $result->errors()->first());
 
         // 5
         $result = Validator::make(['foo' => 'qwe123r#ty'], ['foo' => 'psw_symbols']);
@@ -110,19 +110,19 @@ class PasswordTest extends TestCase
         $result = Validator::make(['foo' => 'qwerty'], ['foo' => 'psw_min_length']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must be at least ten characters.", $result->errors()->first());
+        $this->assertSame('The foo must be at least ten characters.', $result->errors()->first());
 
         // 2
         $result = Validator::make(['foo' => 'qwer'], ['foo' => 'psw_min_length']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must be at least ten characters.", $result->errors()->first());
+        $this->assertSame('The foo must be at least ten characters.', $result->errors()->first());
 
         // 3
         $result = Validator::make(['foo' => 'qwerty123'], ['foo' => 'psw_min_length']);
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
-        $this->assertSame("The foo must be at least ten characters.", $result->errors()->first());
+        $this->assertSame('The foo must be at least ten characters.', $result->errors()->first());
 
         // 4
         $result = Validator::make(['foo' => 'qwerty1234'], ['foo' => 'psw_min_length']);
@@ -137,7 +137,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 
@@ -146,7 +146,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 
@@ -155,7 +155,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 
@@ -164,7 +164,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 
@@ -173,7 +173,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 
@@ -182,7 +182,7 @@ class PasswordTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            "The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.",
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
             $result->errors()->first()
         );
 

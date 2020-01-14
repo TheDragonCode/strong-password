@@ -9,11 +9,11 @@ class StrongRule implements Rule
     public static function passes($value = null): bool
     {
         /**
-         * @var string $name
+         * @var string
          * @var \Helldar\StrongPassword\Contracts\Rule $rule
          */
         foreach (static::rules() as $name => $rule) {
-            if (! $rule::passes($value)) {
+            if (!$rule::passes($value)) {
                 return false;
             }
         }
@@ -29,7 +29,7 @@ class StrongRule implements Rule
     protected static function rules(): array
     {
         return array_filter(Rules::ALL, function ($rule) {
-            return $rule !== StrongRule::class;
+            return $rule !== self::class;
         });
     }
 }
