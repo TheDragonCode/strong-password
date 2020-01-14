@@ -15,7 +15,7 @@ class Rules
 
     const PREFIX = 'psw_';
 
-    public static function get(string $rule)
+    public static function get(string $rule): string
     {
         return static::ALL[$rule];
     }
