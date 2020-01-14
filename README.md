@@ -44,9 +44,7 @@ If you don't use auto-discovery, add the ServiceProvider to the providers array 
 ```php
 public function register()
 {
-    if($this->app->environment() !== 'production') {
-        $this->app->register(\Helldar\StrongPassword\ServiceProvider::class);
-    }
+    $this->app->register(\Helldar\StrongPassword\ServiceProvider::class);
 }
 ```
 
