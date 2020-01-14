@@ -6,5 +6,5 @@ return [
     'numbers'    => 'The :attribute must include at least one number.',
     'symbols'    => 'The :attribute must include at least one symbol.',
     'min_length' => 'The :attribute must be at least ten characters.',
-    'strong'     => 'The :attribute must contain at least two characters in the lower and upper registers, at least one digit and a special character, and at least ten characters.',
+    'strong'     => 'The :attribute must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
 ];
