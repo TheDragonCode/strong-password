@@ -249,16 +249,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.3",
+            "version": "v6.18.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4e48acfaba87f08320a2764d36c3b6a4a4112ccf"
+                "reference": "27edffebcde21e0aa65ef581e787b1e1c22f7abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4e48acfaba87f08320a2764d36c3b6a4a4112ccf",
-                "reference": "4e48acfaba87f08320a2764d36c3b6a4a4112ccf",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/27edffebcde21e0aa65ef581e787b1e1c22f7abc",
+                "reference": "27edffebcde21e0aa65ef581e787b1e1c22f7abc",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-03-24T16:37:50+00:00"
+            "time": "2020-04-07T14:40:17+00:00"
         },
         {
             "name": "league/commonmark",
