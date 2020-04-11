@@ -3270,16 +3270,16 @@
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v4.7.0",
+            "version": "v4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "fad3769a7903021f5784d5d76aa6eb3a3904b215"
+                "reference": "c8e9ce9578fe13c075751d81f23dc2c3bb37a134"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/fad3769a7903021f5784d5d76aa6eb3a3904b215",
-                "reference": "fad3769a7903021f5784d5d76aa6eb3a3904b215",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/c8e9ce9578fe13c075751d81f23dc2c3bb37a134",
+                "reference": "c8e9ce9578fe13c075751d81f23dc2c3bb37a134",
                 "shasum": ""
             },
             "require": {
@@ -3331,17 +3331,7 @@
                 "orchestral",
                 "testing"
             ],
-            "funding": [
-                {
-                    "url": "https://paypal.me/crynobone",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/crynobone",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-03-06T23:07:37+00:00"
+            "time": "2020-04-11T10:37:21+00:00"
         },
         {
             "name": "phar-io/manifest",
