@@ -21,7 +21,7 @@ class ServiceProvider extends IlluminateServiceProvider
             /** @var \Helldar\StrongPassword\Contracts\Rule $rule */
             $rule = Rules::get($name);
 
-            $validator->extend(Rules::name($name), function ($_, $value) use ($rule) {
+            $validator->extend(Rules::name($name), static function ($_, $value) use ($rule) {
                 return $rule::passes($value);
             }, $rule::message());
         }, Rules::names());
