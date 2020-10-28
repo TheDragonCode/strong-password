@@ -4,7 +4,7 @@ namespace Helldar\StrongPassword\Rules;
 
 class Rules
 {
-    const ALL = [
+    public const ALL = [
         'case_diff'  => CaseDiffRule::class,
         'letters'    => LettersRule::class,
         'min_length' => MinLengthRule::class,
@@ -13,7 +13,7 @@ class Rules
         'symbols'    => SymbolsRule::class,
     ];
 
-    const PREFIX = 'psw_';
+    public const PREFIX = 'psw_';
 
     public static function get(string $rule): string
     {
