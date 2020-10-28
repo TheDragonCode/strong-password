@@ -10,7 +10,7 @@ class ServiceProvider extends IlluminateServiceProvider
 {
     public function boot(Factory $validator)
     {
-        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'strong-password');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'strong-password');
 
         $this->validation($validator);
     }
