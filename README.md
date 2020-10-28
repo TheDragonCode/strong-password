@@ -2,14 +2,14 @@
 
 This package provides a validator for ensuring strong passwords in Laravel applications.
 
-<p align="center">
-    <a href="https://styleci.io/repos/184076269"><img src="https://styleci.io/repos/184076269/shield" alt="StyleCI" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://img.shields.io/packagist/dt/andrey-helldar/strong-password.svg?style=flat-square" alt="Total Downloads" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://poser.pugx.org/andrey-helldar/strong-password/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/strong-password"><img src="https://poser.pugx.org/andrey-helldar/strong-password/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
-    <a href="https://travis-ci.org/andrey-helldar/strong-password"><img src="https://travis-ci.org/andrey-helldar/strong-password.svg?branch=master" alt="Travis CI" /></a>
-    <a href="LICENSE"><img src="https://poser.pugx.org/andrey-helldar/strong-password/license?format=flat-square" alt="License" /></a>
-</p>
+[![StyleCI Status][badge_styleci]][link_styleci]
+[![Github Workflow Status][badge_build]][link_build]
+[![For Laravel][badge_laravel]][link_packagist]
+
+[![Stable Version][badge_stable]][link_packagist]
+[![Unstable Version][badge_unstable]][link_packagist]
+[![Total Downloads][badge_downloads]][link_packagist]
+[![License][badge_license]][link_license]
 
 
 ## Contents
@@ -87,3 +87,16 @@ $validator->passes(); // return `true`
 ## License
 
 This package is released under the [MIT License](LICENSE).
+
+[badge_styleci]:    https://styleci.io/repos/130698068/shield
+[badge_build]:      https://img.shields.io/github/workflow/status/andrey-helldar/strong-password/phpunit?style=flat-square
+[badge_laravel]:    https://img.shields.io/badge/Laravel-5.5.x%20%7C%206.x%20%7C%207.x%20%7C%208.x-orange.svg?style=flat-square
+[badge_stable]:     https://img.shields.io/github/v/release/andrey-helldar/strong-password?label=stable&style=flat-square
+[badge_unstable]:   https://img.shields.io/badge/unstable-dev--master-orange?style=flat-square
+[badge_downloads]:  https://img.shields.io/packagist/dt/andrey-helldar/strong-password.svg?style=flat-square
+[badge_license]:    https://img.shields.io/packagist/l/andrey-helldar/strong-password.svg?style=flat-square
+
+[link_styleci]:     https://github.styleci.io/repos/184076269
+[link_build]:       https://github.com/andrey-helldar/strong-password/actions
+[link_packagist]:   https://packagist.org/packages/andrey-helldar/strong-password
+[link_license]:     LICENSE
