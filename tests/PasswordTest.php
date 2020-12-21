@@ -1,9 +1,8 @@
 <?php
 
-namespace Tests\PHPUnit;
+namespace Tests;
 
 use Illuminate\Support\Facades\Validator;
-use Tests\TestCase;
 
 class PasswordTest extends TestCase
 {
