@@ -117,7 +117,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 
@@ -125,7 +125,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 
@@ -133,7 +133,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 
@@ -141,7 +141,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 
@@ -149,7 +149,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 
@@ -157,7 +157,7 @@ final class RulesTest extends TestCase
         $this->assertTrue($result->fails());
         $this->assertCount(1, $result->errors()->all());
         $this->assertSame(
-            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least 10 characters.',
+            'The foo must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least ten characters.',
             $result->errors()->first()
         );
 

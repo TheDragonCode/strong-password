@@ -2,9 +2,10 @@
 
 namespace Helldar\StrongPassword\Rules;
 
-use Helldar\StrongPassword\Contracts\Rule;
+use Helldar\StrongPassword\Concerns\Rule;
+use Helldar\StrongPassword\Contracts\Rule as RuleContract;
 
-final class StrongRule implements Rule
+final class StrongRule extends Rule implements RuleContract
 {
     public static function passes($value = null): bool
     {
@@ -19,7 +20,7 @@ final class StrongRule implements Rule
 
     public static function message(): string
     {
-        return trans('strong-password::validation.strong');
+        return trans('strong-password::validation.strong', ['length' => static::translateLength()]);
     }
 
     protected static function rules(): array
