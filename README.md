@@ -84,10 +84,6 @@ $validator->passes(); // return `true`
 ```
 
 
-## License
-
-This package is released under the [MIT License](LICENSE).
-
 [badge_styleci]:    https://styleci.io/repos/130698068/shield
 [badge_build]:      https://img.shields.io/github/workflow/status/andrey-helldar/strong-password/phpunit?style=flat-square
 [badge_laravel]:    https://img.shields.io/badge/Laravel-5.5.x%20%7C%206.x%20%7C%207.x%20%7C%208.x-orange.svg?style=flat-square
