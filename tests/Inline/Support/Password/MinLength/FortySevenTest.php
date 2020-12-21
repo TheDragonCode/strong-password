@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Support\Password\MinLength;
+namespace Tests\Inline\Support\Password\MinLength;
 
-use Tests\TestCase;
+use Tests\Inline\InlineTestCase;
 
-class FortySevenTest extends TestCase
+class FortySevenTest extends InlineTestCase
 {
     protected $length = 47;
 
@@ -16,6 +16,6 @@ class FortySevenTest extends TestCase
 
         $this->assertArrayHasKey('password', $validated);
 
-        $this->assertEquals(['password' => ['The password must be at least forty-seven characters.']], $validated);
+        $this->assertEquals(['password' => ['This field must be at least forty-seven characters.']], $validated);
     }
 }

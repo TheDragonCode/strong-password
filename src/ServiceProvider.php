@@ -10,7 +10,7 @@ final class ServiceProvider extends BaseServiceProvider
 {
     public function boot(Factory $validator)
     {
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'strong-password');
+        $this->loadTranslationsFrom($this->translationsPath(), 'strong-password');
 
         $this->configPublish();
 
@@ -47,5 +47,12 @@ final class ServiceProvider extends BaseServiceProvider
             __DIR__ . '/../config/strong-password.php',
             'strong-password'
         );
+    }
+
+    protected function translationsPath(): string
+    {
+        return $this->app['config']->get('strong-password.inline')
+            ? __DIR__ . '/../resources/lang/inline'
+            : __DIR__ . '/../resources/lang/basic';
     }
 }

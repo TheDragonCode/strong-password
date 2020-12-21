@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Support\Password\MinLength;
+namespace Tests\Basic\Support\Password\MinLength;
 
 use Tests\TestCase;
 
-class DefaultTest extends TestCase
+class FiveTest extends TestCase
 {
-    protected $length = 10;
+    protected $length = 5;
 
-    public function testMinLength()
+    public function testMinLength5()
     {
         $this->setRules(['psw_min_length']);
 

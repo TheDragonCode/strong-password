@@ -23,4 +23,20 @@ return [
         // 'psw_min_length',
         'psw_strong',
     ],
+
+    /*
+     * Allows the use of inline validation error texts.
+     *
+     * For example,
+     *
+     *  `true`:
+     *    This field must include at least one letter.
+     *
+     *  `false`:
+     *    The password must include at least one letter.
+     *
+     * By default, false.
+     */
+
+    'inline' => false,
 ];

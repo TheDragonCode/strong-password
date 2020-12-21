@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Support\Password;
+namespace Tests\Basic\Support\Password;
 
 use Tests\TestCase;
 

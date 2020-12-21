@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Support\Password;
+namespace Tests\Inline\Support\Password;
 
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
-use Tests\TestCase;
+use Tests\Inline\InlineTestCase;
 
-class ValidateTest extends TestCase
+class ValidateTest extends InlineTestCase
 {
     public function testNull()
     {

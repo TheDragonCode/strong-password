@@ -17,6 +17,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         $this->setMinLength();
+        $this->setInline();
 
         return [ServiceProvider::class];
     }
@@ -35,6 +36,13 @@ abstract class TestCase extends BaseTestCase
     {
         if (property_exists($this, 'length')) {
             Config::set('strong-password.min_length', $this->length);
+        }
+    }
+
+    protected function setInline(): void
+    {
+        if (property_exists($this, 'inline')) {
+            Config::set('strong-password.inline', $this->inline);
         }
     }
 }

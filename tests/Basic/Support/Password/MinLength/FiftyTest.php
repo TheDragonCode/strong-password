@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Support\Password\MinLength;
+namespace Tests\Basic\Support\Password\MinLength;
 
 use Tests\TestCase;
 

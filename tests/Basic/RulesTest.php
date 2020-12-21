@@ -1,8 +1,9 @@
 <?php
 
-namespace Tests;
+namespace Tests\Basic;
 
 use Illuminate\Support\Facades\Validator;
+use Tests\TestCase;
 
 final class RulesTest extends TestCase
 {
