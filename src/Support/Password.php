@@ -9,7 +9,9 @@ final class Password
 {
     public function validate(string $password = null): array
     {
-        return $this->validator($password)->validated();
+        $this->validator($password)->validate();
+
+        return compact('password');
     }
 
     public function errors(string $password = null): ?array
