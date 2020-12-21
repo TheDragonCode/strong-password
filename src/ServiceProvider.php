@@ -6,7 +6,7 @@ use Helldar\StrongPassword\Rules\Rules;
 use Illuminate\Contracts\Validation\Factory;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
-class ServiceProvider extends IlluminateServiceProvider
+final class ServiceProvider extends IlluminateServiceProvider
 {
     public function boot(Factory $validator)
     {

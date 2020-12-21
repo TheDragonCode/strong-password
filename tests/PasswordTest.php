@@ -4,7 +4,7 @@ namespace Tests;
 
 use Illuminate\Support\Facades\Validator;
 
-class PasswordTest extends TestCase
+final class PasswordTest extends TestCase
 {
     public function testFoo()
     {

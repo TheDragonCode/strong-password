@@ -4,7 +4,7 @@ namespace Helldar\StrongPassword\Rules;
 
 use Helldar\StrongPassword\Contracts\Rule;
 
-class SymbolsRule implements Rule
+final class SymbolsRule implements Rule
 {
     public static function passes($value = null): bool
     {

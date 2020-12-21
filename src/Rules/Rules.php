@@ -2,7 +2,7 @@
 
 namespace Helldar\StrongPassword\Rules;
 
-class Rules
+final class Rules
 {
     public const ALL = [
         'case_diff'  => CaseDiffRule::class,

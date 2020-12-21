@@ -5,7 +5,7 @@ namespace Helldar\StrongPassword\Rules;
 use Helldar\StrongPassword\Contracts\Rule;
 use Illuminate\Support\Str;
 
-class MinLengthRule implements Rule
+final class MinLengthRule implements Rule
 {
     public static function passes($value = null): bool
     {

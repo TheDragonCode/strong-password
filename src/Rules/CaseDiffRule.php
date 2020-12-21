@@ -4,7 +4,7 @@ namespace Helldar\StrongPassword\Rules;
 
 use Helldar\StrongPassword\Contracts\Rule;
 
-class CaseDiffRule implements Rule
+final class CaseDiffRule implements Rule
 {
     public static function passes($value = null): bool
     {
