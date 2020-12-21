@@ -17,13 +17,13 @@ class ServiceProvider extends IlluminateServiceProvider
 
     protected function validation(Factory $validator)
     {
-        array_map(function ($name) use ($validator) {
+        foreach (Rules::names() as $name) {
             /** @var \Helldar\StrongPassword\Contracts\Rule $rule */
             $rule = Rules::get($name);
 
             $validator->extend(Rules::name($name), static function ($_, $value) use ($rule) {
                 return $rule::passes($value);
             }, $rule::message());
-        }, Rules::names());
+        }
     }
 }
