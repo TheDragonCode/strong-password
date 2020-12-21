@@ -18,6 +18,7 @@ class FiftyTest extends TestCase
 
         $this->assertEquals(
             ['password' => ['The password must contain at least two characters in lower and upper case, at least one digit and special character, and also have a length of at least fifty characters.']],
-            $validated);
+            $validated
+        );
     }
 }

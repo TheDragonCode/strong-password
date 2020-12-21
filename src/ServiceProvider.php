@@ -44,7 +44,8 @@ final class ServiceProvider extends BaseServiceProvider
     protected function registerConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/strong-password.php', 'strong-password'
+            __DIR__ . '/../config/strong-password.php',
+            'strong-password'
         );
     }
 }
