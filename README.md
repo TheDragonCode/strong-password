@@ -12,14 +12,6 @@ This package provides a validator for ensuring strong passwords in Laravel appli
 [![License][badge_license]][link_license]
 
 
-## Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-    * [Rules](#rules)
-    * [Validation in context](#validation-in-context)
-* [License](#license)
-
 ## Installation
 
 To get the latest version of Laravel Strong Password, simply require the project using [Composer](https://getcomposer.org):
@@ -150,6 +142,17 @@ return Password::errors($password);
 return Password::isAllow($password);
 // return true
 ```
+
+## License
+
+This package is licensed under the [MIT License](LICENSE).
+
+
+## For Enterprise
+
+Available as part of the Tidelift Subscription.
+
+The maintainers of `andrey-helldar/strong-password` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use. [Learn more](https://tidelift.com/subscription/pkg/packagist-andrey-helldar-strong-password?utm_source=packagist-andrey-helldar-strong-password&utm_medium=referral&utm_campaign=enterprise&utm_term=repo).
 
 [badge_styleci]:    https://styleci.io/repos/130698068/shield
 
