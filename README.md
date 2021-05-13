@@ -12,6 +12,8 @@ This package provides a validator for ensuring strong passwords in Laravel appli
 [![License][badge_license]][link_license]
 
 
+> In Laravel, since version [8.39.0](https://github.com/laravel/framework/releases/tag/v8.39.0), you can use the standard [password](https://laravel.com/docs/8.x/validation#validating-passwords) functionality ([#36960](https://github.com/laravel/framework/pull/36960)).
+
 ## Installation
 
 To get the latest version of Laravel Strong Password, simply require the project using [Composer](https://getcomposer.org):
