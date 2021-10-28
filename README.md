@@ -1,5 +1,7 @@
 # Laravel Strong Password
 
+<img src="https://preview.dragon-code.pro/TheDragonCode/strong-password.svg?brand=laravel" width="100%" height="320" alt="Laravel Strong Password"/>
+
 This package provides a validator for ensuring strong passwords in Laravel applications.
 
 [![StyleCI Status][badge_styleci]][link_styleci]
